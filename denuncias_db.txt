@@ -1,0 +1,23 @@
+
+--tabla para el funcionamiento del sistema
+CREATE TABLE denuncias (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(100) NOT NULL,
+    descripcion VARCHAR(255) NOT NULL,
+    ubicacion VARCHAR(150) NOT NULL,
+    estado varchar(20) DEFAULT 'Pendiente',
+    ciudadano VARCHAR(100) NOT NULL,
+    telefono_ciudadano VARCHAR(15), 
+    fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP 
+);
+
+
+--inserciones
+INSERT INTO `denuncias` (`id`, `titulo`, `descripcion`, `ubicacion`, `estado`, `ciudadano`, `telefono_ciudadano`, `fecha_registro`) VALUES
+(1, 'Bache en la calle', 'Hay un bache muy grande', ' Av. Principal esquina con Jr. 2do', 'pendiente', 'Juan Pérez', '987654321', '2025-11-17 19:17:26'),
+(2, 'Parque sucio', 'El parque de la plaza está lleno de basura y perros sueltos.', 'Parque Principal', 'resuelto', 'María López', '912345678', '2025-11-17 19:17:26'),
+(4, 'Bache en la calle', 'Hay un bache muy grande en la esquina que representa peligro para los vehículos', 'Av. Principal esquina con Calle Secundaria', 'en proceso', 'Juan Pérez', '', '2025-11-17 20:28:30'),
+(5, 'Parque sucio', 'El parque de la plaza está lleno de basura y necesita limpieza urgente', 'Parque Principal del distrito', 'en proceso', 'María López', '', '2025-11-17 20:28:30'),
+(6, 'Recolección de basura', 'No se recogió la basura ayer como era scheduled, hay acumulación de desechos', 'Av. Mexico cuadra 5', 'resuelto', 'Carlos García', '', '2025-11-17 20:28:30'),
+(7, 'Alumbrado público dañado', 'Poste de luz no funciona en toda la cuadra, es peligroso de noche', 'Calle Los Pinos 123', 'pendiente', 'Ana Martínez', '', '2025-11-17 20:28:30'),
+(8, 'Fuga de agua', 'Tubería rota está causando fuga de agua y inundación en la vereda', 'Jr. Union 456', 'resuelto', 'Roberto Sánchez', '', '2025-11-17 20:28:30');
