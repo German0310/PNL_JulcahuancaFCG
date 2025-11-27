@@ -2,7 +2,7 @@ Instrucciones de Instalación y Configuración
 Siga estos pasos para poner en marcha el sistema:
 
 1. Preparar el Entorno (XAMPP)
-Instalar XAMPP: Asegúrese de que XAMPP (o un paquete similar) esté instalado.
+Instalar XAMPP: Asegúrese de que XAMPP  esté instalado.
 
 Iniciar Servicios: Inicie los servicios de Apache y MySQL desde el panel de control de XAMPP.
 
